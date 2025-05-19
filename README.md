@@ -1,5 +1,7 @@
 # Wiki Forum React App
 
+![App preview](src/assets/HeroImagesample.PNG)
+
 ## Installation
 
 1. **Clone the repository:**
