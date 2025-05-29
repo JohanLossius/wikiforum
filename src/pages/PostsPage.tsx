@@ -1,3 +1,4 @@
+import { body } from 'framer-motion/client';
 import React, { useState, useEffect } from 'react';
 
 interface Post {
@@ -8,7 +9,7 @@ interface Post {
 
 const PostsPage: React.FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
-  const [newPost, setNewPost] = useState({ title: '', content: '' });
+  const [newPost, setNewPost] = useState({ title: '', body: '' });
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -54,7 +55,7 @@ const PostsPage: React.FC = () => {
       }
       const data: Post = await response.json();
       setPosts((prev) => [...prev, data]);
-      setNewPost({ title: '', content: '' });
+      setNewPost({ title: '', body: '' });
       setError(null);
     } catch (err) {
       setError('Failed to create post: ' + (err as Error).message);
@@ -80,7 +81,7 @@ const PostsPage: React.FC = () => {
           <label>Content:</label>
           <textarea
             name="content"
-            value={newPost.content}
+            value={newPost.body}
             onChange={handleInputChange}
             required
             style={{ margin: '10px', padding: '5px', width: '300px', height: '100px' }}
