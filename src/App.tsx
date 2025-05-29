@@ -1,9 +1,8 @@
-// src/App.tsx
+import { useColorMode } from './colorModeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import LandingPageCards from './components/LandingPageCards';
 import Footer from './components/Footer';
-import { useColorMode } from './colorModeContext';
 
 function App() {
   const { colorMode } = useColorMode();
