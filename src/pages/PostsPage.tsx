@@ -98,7 +98,7 @@ const PostsPage: React.FC = () => {
           {posts.map((post) => (
             <li key={post._id} style={{ marginBottom: '10px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px' }}>
               <h3>{post.title}</h3>
-              <p>{post.body}</p> // Changed from 'content' to 'body'
+              <p>{post.body}</p>
             </li>
           ))}
         </ul>
