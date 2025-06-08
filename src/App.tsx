@@ -18,15 +18,6 @@ function App() {
   }, [colorMode]);
 
 
-  // return (
-  //   <div className={colorMode === 'dark' ? 'dark' : colorMode === 'read' ? 'read' : ''}>
-  //     <Navbar />
-  //     <Hero />
-  //     <LandingPageCards />
-  //     <Footer />
-  //   </div>
-  // );
-
   return (
     <>
       <Navbar />
