@@ -140,13 +140,13 @@ const Navbar = () => {
                     </li>
                     <li>
                       <motion.a
-                        href="#"
+                        href="/posts"
                         className="block text-5xl font-light text-white hover:text-blue-400 py-6"
                         onClick={toggleMenu}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                        ABOUT
+                        POSTS
                       </motion.a>
                     </li>
                   </ul>
