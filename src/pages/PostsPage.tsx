@@ -13,7 +13,7 @@ const PostsPage: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const API_BASE_URL = 'http://localhost:5000/api';
+  const API_BASE_URL = 'http://localhost:5500/api';
 
   // Fetch posts on mount
   useEffect(() => {
